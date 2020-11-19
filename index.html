@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./src/app.js" defer type="module"></script>
+    <script src="./src/menu.js" defer type="module"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+</head>
+
+<body>
+    <div class="game-bar">
+        <div class="game-nav">
+            <div class="new-game">
+                <button class="btn-nav btn-new-game">Sign Up</button>
+                <div class="new-user">
+                    <input type="text" name="user" class="user-name" id="user-name" placeholder="Enter Your Name..." required>
+                    <input type="password" name="password" id="password" class="user-name" placeholder="Enter Your Password..." required>
+                </div>
+            </div>
+            <div class="level">
+                <button class="btn-nav btn-level">Levels</button>
+                <ul class="level-container">
+                    <li><button class="btn" data-level="1">Easy</button></li>
+                    <li><button class="btn" data-level="3">Normal</button></li>
+                    <li><button class="btn" data-level="5">Hard</button></li>
+                    <li><button class="btn" data-level="7">Monster</button></li>
+                    <li><button class="btn" data-level="10">God</button></li>
+                </ul>
+            </div>
+            <div class="history-game">
+                <button class="btn-nav score-btn">Account
+                </button>
+                <div class="history-score">
+                    <button class="old-user"><span class="old-user-name">NTG</span> : <span class="old-score">100 </span> </button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="game-board" id="game-board">
+        
+    </div>
+    <div class="score-game-board">000</div>
+    
+</body>
+
+</html>

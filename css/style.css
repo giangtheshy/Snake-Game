@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    outline: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.game-board {
+    
+    background-color: #ccc;
+    width: 100vmin;
+    height: 100vmin;
+    display: grid;
+    grid-template-columns: repeat(21, 1fr);
+    grid-template-rows: repeat(21, 1fr);
+    /* position: relative;
+    top: 0; */
+}
+
+.score-game-board {
+    position: absolute;
+    top: 2rem;
+    left: 50vw;
+    background-color: white;
+    color: red;
+    font-size: 1.2rem;
+    width: 3rem;
+    height: 3rem;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+    z-index: 3;
+    border-radius: 50%;
+    background: transparent;
+}
+
+.snake {
+    background-color: blue;
+    border: .25vmin solid black;
+}
+
+.food {
+    background-color: yellow;
+    border: .25vmin solid black;
+}
+
+.game-bar {
+
+    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+    width: 100vmin;
+    height: 100vmin;
+    position: absolute;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* display:none; */
+}
+
+
+.btn-nav {
+    background: linear-gradient(to right, #000046, #1cb5e0);
+    color: white;
+    padding: 1vmin 2vmin;
+    min-width: 10rem;
+    display: block;
+    border-radius: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.new-game {
+    margin: 1vmin 0;
+
+}
+.user-name{
+    width: 10rem;
+    height: 2rem;
+    border-radius: 1rem;
+    border: none;
+    text-align: center;
+    margin-top: .5rem;
+    
+}
+.new-user{
+    overflow: hidden;
+    height: 0rem;
+    transition: all .3s linear;
+    display:flex;
+    flex-direction: column;
+}
+.show-user{
+    height: 5rem;
+}
+.level {
+    margin: 1vmin 0;
+}
+
+.level-container {
+    list-style-type: none;
+    height: 0;
+    overflow: hidden;
+    transition: all .3s linear;
+}
+
+.show-level {
+    height: 10rem;
+}
+
+.btn {
+    background: linear-gradient(to right, #004ff9, #fff94c);
+    color: white;
+    padding: 1vmin 2vmin;
+    min-width: 8rem;
+    display: block;
+    border-radius: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.history-game {
+    margin: 1vmin 0;
+}
+
+.old-user {
+    background: linear-gradient(to right, #004ff9, #fff94c);
+    color: white;
+    padding: 1vmin 2vmin;
+    min-width: 8rem;
+    display: block;
+    border-radius: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.history-score {
+    height: 0;
+    overflow: hidden;
+    transition: all .3s linear; 
+}
+
+.show-history {
+    height: 10rem;
+    overflow-y: auto;
+}
+
+.old-user-name {
+    font-weight: bold;
+    color: black;
+}
+
+.old-score {
+    font-weight: bold;
+    color: red;
+}
+
+.user:first-child {
+    margin-top: .5rem;
+}
